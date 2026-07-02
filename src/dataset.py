@@ -1,3 +1,5 @@
+import torch
+
 from pathlib import Path
 
 from torchvision import datasets
@@ -103,21 +105,25 @@ class DatasetLoader:
             dataset=train_dataset,
             batch_size=self.batch_size,
             shuffle=True,
-            num_workers=self.num_workers
+            num_workers=self.num_workers,
+            pin_memory=torch.cuda.is_available()
+
         )
 
         val_loader = DataLoader(
             dataset=val_dataset,
             batch_size=self.batch_size,
             shuffle=False,
-            num_workers=self.num_workers
+            num_workers=self.num_workers,
+            pin_memory=torch.cuda.is_available()
         )
 
         test_loader = DataLoader(
             dataset=test_dataset,
             batch_size=self.batch_size,
             shuffle=False,
-            num_workers=self.num_workers
+            num_workers=self.num_workers,
+            pin_memory=torch.cuda.is_available()
         )
 
         print("=" * 50)

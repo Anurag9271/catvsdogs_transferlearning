@@ -14,7 +14,7 @@ data:
     - Cat
     - Dog
 
-  num_workers: 2
+  num_workers: 0
 
 training:
   epochs: 10
