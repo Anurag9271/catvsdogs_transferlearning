@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Model files
+*.pth
+*.pt
+
+# MLflow
+mlruns/
+
+# DVC Cache
+.dvc/cache/
+
+# OS files
+.DS_Store
+Thumbs.db
