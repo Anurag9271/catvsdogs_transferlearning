@@ -9,6 +9,11 @@ data:
   image_size: 224
   batch_size: 32
 
+  random_seed: 42
+  classes:
+    - Cat
+    - Dog
+
 training:
   epochs: 10
   learning_rate: 0.001

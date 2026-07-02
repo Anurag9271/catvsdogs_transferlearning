@@ -1,5 +1,9 @@
+from src.data_ingestion import DataIngestion
+
+
 def main():
-    print("Cats vs Dogs Classification Project")
+    ingestion = DataIngestion()
+    ingestion.run()
 
 
 if __name__ == "__main__":
