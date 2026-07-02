@@ -1,11 +1,11 @@
-from src.dataset import DatasetLoader
+from src.model import ModelBuilder
 
 
 def main():
 
-    loader = DatasetLoader()
+    builder = ModelBuilder()
 
-    train_loader, val_loader, test_loader = loader.run()
+    model = builder.run()
 
 
 if __name__ == "__main__":
