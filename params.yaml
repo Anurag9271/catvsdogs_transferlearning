@@ -14,6 +14,8 @@ data:
     - Cat
     - Dog
 
+  num_workers: 2
+
 training:
   epochs: 10
   learning_rate: 0.001
